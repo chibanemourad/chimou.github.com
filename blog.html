@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mourad CHIBANE, Page perso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="chimou" content="">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fam-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/sprites.css">
+  <link rel="stylesheet" type="text/css" href="css/icons.css">
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Paprika' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="img/browser.png">
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="index.html">Mourad CHIBANE</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li><a href="index.html"><i class="icon-white icon-home"></i> Acceuil</a></li>
+            <li><a href="projets.html"><i class="icon-white icon-cog"></i> Cyberfolio</a></li>
+            <li><a href="cv.html"><i class="icon-white icon-user"></i> CV</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+</br></br></br>
+<div class="container-fluid">
+ <div class="span13">
+  <div class="hero-unit">
+    <blockquote>
+     <h2>Cette section n'est pas encore disponible!</h2>
+     <p>Dans cette section y aurra prochainement un blog ou je parlerai de ce qui m'intéresse</p>
+   </blockquote>
+   <div align="center" id="myCarouselblog" class="carousel slide">
+     <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/WebsiteConst1.png" class="img-rounded" alt="">
+      </div>
+      <div class="item">
+        <img src="img/WebsiteConst2.png" class="img-rounded" alt="">
+      </div>
+      <div class="item">
+        <img src="img/WebsiteConst3.png" class="img-rounded" alt="">
+      </div>
+    </div>
+  </div>
+
+</div> <!-- / .container -->
+
+
+
+
+</div>  
+
+<hr>
+
+<footer>
+  <p class="pull-right"><a href="#">Haut de page<i class="icon-white icon-chevron-up"></i></a>
+  </p>
+  <p>&copy; Mourad CHIBANE 2012</p>
+</footer>
+</div> <!-- /container -->
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/age.js"></script>
+<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+<script type="text/javascript" src="js/courseinter.js"></script>
+<script>
+$('.carousel').carousel({
+  interval: 2000
+})
+$('#carousel-nav a').click(function(q){
+  q.preventDefault();
+  targetSlide = $(this).attr('data-to')-1;
+  $('#myCarouselblog').carousel(targetSlide);
+  $(this).addClass('active').siblings().removeClass('active');
+});
+</script>
+</body>
+</html>

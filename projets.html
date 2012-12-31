@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mourad CHIBANE, Page perso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="chimou" content="">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fam-icons.css">
+  <link href='http://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Paprika' rel='stylesheet' type='text/css'>
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="img/browser.png">
+</head>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="index.html">Mourad CHIBANE</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="index.html"><i class="icon-white icon-home"></i> Acceuil</a></li>
+          <li class="active"><a href="projets.html"><i class="icon-white icon-cog"></i> Cyberfolio</a></li>
+          <li><a href="cv.html"><i class="icon-white icon-user"></i> CV</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
+</br></br></br>
+
+<div class="container-fluid">
+ <div class="span13">
+  <div class="hero-unit">
+    <blockquote>
+     <h1>Coding, compiling, sharing... !</h1>
+     <p>Dans cette section vous trouvez mes projets d'études et mes réalisations personnelles</p>
+     <small>J'espère que <cite title="Source Title">vous trouverez ce qui vous interesse</cite></small>
+   </blockquote>
+   <p> Vous trouverez ci-dessous, quel-ques projets open source sur lesquels j'ai travaillé tout au long de mon cursus universitaire ainsi que quelques réalisations personnelles :</p>
+ </div>  
+ <div class="row-fluid">
+  <!-- première ligne -->
+  <div class="row-fluid">
+    <ul class="thumbnails">
+      <li class="span4">
+        <div class="thumbnail">
+          <img src="ressources/screenshots/supplychain.png" class="img-rounded" alt="supplu chain img">
+          <div class="caption">
+            <h3 align="center">Supply Chain </h3>
+            <p align="justify">L'objectif de se projet était de trouver la résolution exacte d'un problème d'optimisation de Supply chain "Chaîne d'approvisionnement" par des méthodes d'énumération implicites. la solution a été réalisée par l'outils ILOG CPLEX.</p>
+            <p><a href="https://github.com/chimou/Supply_chain" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+              <!-- Button to trigger modal -->
+              <a href="#moredetail1_1" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+              <!-- Modal -->
+              <div id="moredetail1_1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel1">Supply Chain <small>Définitions du problème :</small></h3>
+                </div>
+                <div class="modal-body">
+                  <p align="justify">Une entreprise manufacturière possède des usines et des entrepôts. Elle fait appel à des fournisseurs pour la matière première et à des sous-traitants pour les produits intermidiaires ou pièces. On supposera que l'entreprise à construit son plan de production pour une période donnée. Son objectif est de produire les biens planifiés et de les acheminer vers ses entrepôts à moindre coût. Mais elle a plusieurs choix possibles : </p>
+                  <ul>
+                    <li> Quels sous traitans, quels fournisseurs choisir ?</li>
+                    <li> Quelles quantité produire dans telle ou telle usine ?</li>
+                    <li> Vers quels entrepôts les envoyer ?</li>
+                  </ul> 
+                  <p align="justify"> Ses décisions dépendent évidemment des coûts. Ces coûts sont de différentes nature: coût d'achat de la matière première et de son acheminement, idem pour les pièces ; coûts de production ; coûts d'acheminement et de stockage vers les différents entrepôts. Il y a aussi des coûts fixes : si on décide d'utilisier tel entrepôt ou usine, il y a un coût ( de mise en route ). </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+                  <a href="https://github.com/chimou/Supply_chain" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+                </div>
+              </div>
+            </p>
+
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <img src="ressources/screenshots/binpacking-Copie.png" class="img-rounded" alt="bin packing prob img">
+          <div class="caption">
+            <h3 align="center">Bin Packing Problem</h3>
+            <p align="justify">Le problème consiste à ranger un ensemble d'articles de poids donnés dans des boîtes de capacité donnée en utilisant le plus petit nombre de boîtes possible. Il s'agit d'un problème NP-difficile, mais pour lequel il existe des techniques efficaces de solution approchée et exact.</p>
+            <p><a href="https://github.com/chimou/Bin_Packing_Problem" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+              <!-- Button to trigger modal -->
+              <a href="#moredetail1_2" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+              <!-- Modal -->
+              <div id="moredetail1_2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h3 id="myModalLabel">Bin Packing Problem : <small>Définitions du problème :</small></h3>
+                </div>
+                <div class="modal-body">
+                  <p align="justify">L’objectif de ce projet est d’analyser le problème qui est un problème d’optimisation appelé aussi problème du conditionnement dans des boites et de proposer une modélisation appropriée pour des méta heuristiques itératives basées sur la notion de voisinage, c’est-à-dire passer de la description textuelle du problème [01], à une formulation plus au moins mathématique [02].</p>
+                  <ul>
+                    <li> [01] Mettre un ensemble d’articles fixés dont on connait le poids, dans des boites de même capacité en utilisant le moins de boites possible.</li>
+                    <li> [02] Soit : 
+                      <ul>
+                        <li>Un nombre infini de boîtes de capacité C</li>
+                        <li>Une liste d’articles i, de poids : Ci tel que : i \in { 1,2,...,n}. <br> min z(y)= some(i=1->n) yi</li>
+                      </ul>
+                    </li>
+                  </ul> 
+                  <p align="justify"> On cherche à trouver le rangement valide pour tous ces articles qui minimise le nombre de boîtes utilisées. Pour qu'un rangement soit valide, la somme des tailles des articles affectés à une boîte doit être inférieure ou égale à C.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+                  <a href="https://github.com/chimou/Bin_Packing_Problem" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+                </div>
+              </div>
+
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="span4">
+        <div class="thumbnail">
+          <div align="center" id="myCarousel" class="carousel slide">
+           <div class="carousel-inner">
+            <div class="item active">
+              <img src="ressources/screenshots/s_salle1.png" class="img-rounded" alt="">
+            </div>
+            <div class="item">
+              <img src="ressources/screenshots/s_salle2.png" class="img-rounded" alt="">
+            </div>
+            <div class="item">
+              <img src="ressources/screenshots/s_salle3.png" class="img-rounded" alt="">
+            </div>
+            <div class="item">
+              <img src="ressources/screenshots/s_salle4.png" class="img-rounded" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <h3 align="center">SalleTP_ModelOpenGL</h3>
+          <p align="justify">Dans le cadre du module INFOGRAPHIE suivi en "Master1" il nous a été demandé de réaliser un projet indivudiel qui consiste à modéliser en 3D une salle informatique de la faculté sciences et techniques de l'université du Havre.</p>
+          <p><a href="https://github.com/chimou/SalleTP_ModelOpenGL" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+            <!-- Button to trigger modal -->
+            <a href="#moredetail3_1" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+            <!-- Modal -->
+            <div id="moredetail3_1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3_1" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel3_1">SalleTP Modélisation OpenGL : </h3>
+              </div>
+              <div class="modal-body">
+                
+                <div align="center" id="myCarousel" class="carousel slide">
+                 <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="ressources/screenshots/salle1.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="ressources/screenshots/salle2.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="ressources/screenshots/salle3.png" alt="">
+                  </div>
+                  <div class="item">
+                    <img src="ressources/screenshots/salle4.png" alt="">
+                  </div>
+                </div>
+              </div>
+              
+
+              <p align="justify">Dans le cadre du module INFOGRAPHIE suivi en "Master1" il nous a été demandé de réaliser un projet indivudiel qui consiste à modéliser en 3D une salle informatique de la faculté sciences et techniques de l'université du Havre.</p>
+              <p align="justify">La solution comporte :</p>
+              <ul>
+                <li> Devellopé en C.</li>
+                <li> Basé sur OpenGL.</li>
+                <li> Démontration de differentes fonctionnalité de base de OpenGL (éclairage,déplacement,texture,etc...)</li>
+                <li> Compatible Windows et Linux</li>
+              </ul> 
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+              <a href="https://github.com/chimou/SalleTP_ModelOpenGL" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+            </div>
+          </div>
+        </p>
+
+      </div>
+    </div>
+  </li>
+</ul>
+</div>
+<!-- deuxième ligne -->
+<div class="row-fluid">
+  <ul class="thumbnails">
+    <li class="span4">
+      <div class="thumbnail">
+        <img src="ressources/screenshots/pacman.png" class="img-rounded" alt="supplu chain img">
+        <div class="caption">
+          <h3 align="center">Pac-Man </h3>
+          <p align="justify">L'objectif de se projet était dans le cadre des algorithmes d'intelligence artificielle utilisés pour la rechrche de chemin « pathfinding » dans un graphe entre un noeud initial et un noeud final d'implémenter l'algorithme A* à travers le développement d'un jeu 2D « Pac-Man ».</p>
+          <p><a href="#" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+            <!-- Button to trigger modal -->
+            <a href="#moredetail2_1" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+            <!-- Modal -->
+            <div id="moredetail2_1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2_1" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel2_1">Pac-Man : <small>Définitions du problème :</small></h3>
+              </div>
+              <div class="modal-body">
+                <p align="justify">L'objectif de se projet était dans le cadre des algorithmes d'intelligence artificielle utilisés pour la rechrche de chemin « pathfinding » dans un graphe entre un noeud initial et un noeud final d'implémenter l'algorithme A* à travers le développement d'un jeu 2D « Pac-Man ».</p>
+                <ul>
+                  <li> ---</li>
+                  <li> ---</li>
+                  <li> ---</li>
+                </ul> 
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+                <a href="#" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+              </div>
+            </div>
+
+
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <img src="ressources/screenshots/routing.png" class="img-rounded" alt="bin packing prob img">
+        <div class="caption">
+          <h3 align="center">Routage</h3>
+          <p align="justify">Il s'agissait d'implémenter un programme JAVA permettant de donner le chemin le plus court dans une topologie réseau donnée. On imaginant que l'on dispose d'un réseau dans lequel se trouvent des machines et des commutateurs avec plusieurs interfaces réseaux.</p>
+          <p><a href="https://github.com/chimou/Routage" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+            <!-- Button to trigger modal -->
+            <a href="#moredetail2_2" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+            <!-- Modal -->
+            <div id="moredetail2_2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2_2" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel2_2">Routage : <small>Définitions du problème :</small></h3>
+              </div>
+              <div class="modal-body">
+                <p align="justify">Il s'agit d'implémenter un programme JAVA permettant de donner le chemin le plus court dans une topologie réseau donnée. On imagine que l'on dispose d'un réseau dans lequel se trouvent des machines et des commutateurs avec plusieurs interfaces réseaux.</p>
+                <p align="justify">Le programme permet :</p>
+                <ul>
+                  <li> La saisie d'un graphe correspondant la topologie du réseau en mode "Graphique" ou en mode "FichierInput.dgs".</li>
+                  <li> L'utilisateur choisira deux machines dans le réseau puis le programme permettra de trouver l'ensemble des nœuds intermédiaires ainsi que les interfaces utilisées pour se rendre d'une extrémité à l'autre.</li>
+                  <li> Le résultat est donné sous la forme textuelle et graphique.</li>
+                  <li> l'établissement des tables de routage au niveau de chaque commutateur.</li>
+                </ul> 
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+                <a href="https://github.com/chimou/Routage" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+              </div>
+            </div>
+
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <img src="ressources/screenshots/turing.png" class="img-rounded" alt="bin packing prob img">
+        <div class="caption">
+          <h3 align="center">Machine de Turing </h3>
+          <p align="justify">Il s'agit d'un programme Java qui prend en entrée une Machine de Turing « M », ainsi que sa donnée « W » chaine de (bâtons) et de (#), puis simule le fonctionnement de « M » sur « W », avec affichage du résultat final.</p></br>
+          <p><a href="https://github.com/chimou/SimulateurMT" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+            <!-- Button to trigger modal -->
+            <a href="#moredetail2_3" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+            <!-- Modal -->
+            <div id="moredetail2_3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2_3" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel2_3">Machine de Turing : <small>Définitions du problème :</small></h3>
+              </div>
+              <div class="modal-body">
+                <p align="justify">Il s'agit d'un programme Java qui prend en entrée une Machine de Turing « M », ainsi que sa donnée « W » chaine de (bâtons) et de (#), puis simule le fonctionnement de « M » sur « W », avec affichage du résultat final.</p>
+                <p align="justify">La solution comporte :</p>
+                <ul>
+                  <li> Une note explicative détaillée.</li>
+                  <li> Les traces d’éxécution.</li>
+                  <li> On considère ici les machine de turing du modèle standard utilisé en mode CALCULATEUR.</li>
+                </ul> 
+              </div>
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+                <a href="https://github.com/chimou/SimulateurMT" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+              </div>
+            </div>
+
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- troisième ligne -->
+<div class="row-fluid">
+  <ul class="thumbnails">
+    <li class="span4">
+      <div class="thumbnail">
+        <div align="center" id="myCarousel" class="carousel slide">
+         <div class="carousel-inner">
+          <div class="item active">
+            <img src="ressources/screenshots/s_salle1.png" class="img-rounded" alt="">
+          </div>
+          <div class="item">
+            <img src="ressources/screenshots/s_salle2.png" class="img-rounded" alt="">
+          </div>
+          <div class="item">
+            <img src="ressources/screenshots/s_salle3.png" class="img-rounded" alt="">
+          </div>
+          <div class="item">
+            <img src="ressources/screenshots/s_salle4.png" class="img-rounded" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="caption">
+        <h3 align="center">SalleTP_ModelOpenGL</h3>
+        <p align="justify">L'objectif de se projet était de trouver la résolution exacte d'un problème d'optimisation de Supply chain "Chaîne d'approvisionnement" par des méthodes d'énumération implicites. la solution a été réalisée par l'outils ILOG CPLEX.</p>
+        <p><a href="https://github.com/chimou/SalleTP_ModelOpenGL" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+          <!-- Button to trigger modal -->
+          <a href="#moredetail3_1" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+          <!-- Modal -->
+          <div id="moredetail3_1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3_1" aria-hidden="true">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 id="myModalLabel3_1">SalleTP Modélisation OpenGL : </h3>
+            </div>
+            <div class="modal-body">
+
+              
+              <div align="center" id="myCarousel" class="carousel slide">
+               <div class="carousel-inner">
+                <div class="item active">
+                  <img src="ressources/screenshots/salle1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="ressources/screenshots/salle2.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="ressources/screenshots/salle3.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="ressources/screenshots/salle4.png" alt="">
+                </div>
+              </div>
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+            
+
+            <p align="justify">Il s'agit d'un programme Java qui prend en entrée une Machine de Turing « M », ainsi que sa donnée « W » chaine de (bâtons) et de (#), puis simule le fonctionnement de « M » sur « W », avec affichage du résultat final.</p>
+            <p align="justify">La solution comporte :</p>
+            <ul>
+              <li> Une note explicative détaillée.</li>
+              <li> Les traces d’éxécution.</li>
+              <li> On considère ici les machine de turing du modèle standard utilisé en mode CALCULATEUR.</li>
+            </ul> 
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+            <a href="https://github.com/chimou/SalleTP_ModelOpenGL" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+          </div>
+        </div>
+      </p>
+
+    </div>
+  </div>
+</li>
+<li class="span4">
+  <div class="thumbnail">
+    <img src="ressources/screenshots/bandepasse.png" class="img-rounded" alt="supplu chain img">
+    <div class="caption">
+      <h3 align="center">TRANSMISSION BINAIRE</h3>
+      <p align="justify">Implémenter en Java sous forme d’applet permettant de tracer le signal électrique émis lors de l’envoi d’une chaîne binaire d’un émetteur à un récepteur en fonction du code choisi parmi les techniques de codage suivantes : (NRZ, Manchester, Manchester Différentiel et Miller).</p>
+      <p><a href="https://github.com/chimou/BandeDePasse" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+        <!-- Button to trigger modal -->
+        <a href="#moredetail" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+        <!-- Modal -->
+        <div id="moredetail" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true" height="400px" width="987px">
+          <div class="modal-header" height="400px" width="987px" >
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel1">TRANSMISSION BINAIRE <small>Définitions du problème :</small></h3>
+          </div>
+          <div class="modal-body">
+            <div style="margin:auto;text-align:center;">
+              <applet name="Transmission en Bande de Passe" codebase="ressources/bin/" code="Canvas.class" height="400px" width="987px"></applet>
+            </div>
+            <p align="justify"> Implémenter en Java sous forme d’applet permettant de tracer le signal électrique émis lors de l’envoi d’une chaîne binaire d’un émetteur à un récepteur en fonction du code choisi parmi les techniques de codage suivantes : (NRZ, Manchester, Manchester Différentiel et Miller).</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+            <a href="https://github.com/chimou/BandeDePasse" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+          </div>
+        </div>
+      </p>
+
+    </div>
+  </div>
+</li>
+<li class="span4">
+  <div class="thumbnail">
+    <img src="ressources/screenshots/labyrinth.png" class="img-rounded" alt="labyrinth img">
+    <div class="caption">
+      <h3 align="center">Labyrinth </h3>
+      <p align="justify">L'objectif est de construire un labyrinthe 2D de taille variable « N x N », en suite de définir une entrée et une sortie du labyrinthe pour pouvoir le parcourir tout en construisant un chemin par suppression d'arretes entre l'entrée et la sortie en utilise un algorithme de parcours.</p>
+      <p><a href="https://github.com/chimou/Labyrinth" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+
+        <!-- Button to trigger modal -->
+        <a href="#moredetail1_3" role="button" class="btn" data-toggle="modal">Plus de détail</a>
+
+        <!-- Modal -->
+        <div id="moredetail1_3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel3">Labyrinth : <small>Définitions du problème :</small></h3>
+          </div>
+          <div class="modal-body">
+            <p align="justify">L’objectif du projet : « Construction d’un labyrinthe » est d’écrire en Java un programme qui nous permet dans un premier temps de construire un labyrinthe 2D de taille : « N x N », en suite de définir une entrée et une sortie du labyrinthe pour pouvoir le parcourir de l’entrée vers la sortie.</p>
+            <p align="justify">Le but de ce TP est de nous faire utiliser les connaissances acquises en cours de théorie des Graphes sur les graphes et leur implémentation, ainsi que les algorithmes les concernant.</p>
+            <p align="justify">Nous allons essayer à travers ce rapport d’expliquer les méthodes que nous avons utilisé afin d’arriver à :</p>
+            <ul>
+              <li> Générer une grille de taille N x N.</li>
+              <li> Créer une entrée et une sortie.</li>
+              <li> Supprimer des arrêtes à l’intérieur de la grille.</li>
+              <li> Vérifier l’existence d’un chemin suite à la suppression d’arrête (si oui continuer sinon revenir à la phase précédente).</li>
+              <li> Générer en dgs du graphe résultant.</li>
+            </ul> 
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Retour</button>
+            <a href="https://github.com/chimou/Labyrinth" class="btn btn btn-primary" target="_blank"><i class="icon-download-alt"></i> Code source</a>
+          </div>
+        </div>
+
+      </p>
+    </div>
+  </div>
+</li>
+</ul>
+</div>
+</div><!--/row-->
+</div><!--/span-->
+</div><!--/row-->
+<hr>
+
+<footer>
+  <p class="pull-right"><a href="#">Haut de page<i class="icon-white icon-chevron-up"></i></a></p>
+  <p>&copy; Mourad CHIBANE 2012</p>
+</footer>
+
+</div><!--/.fluid-container-->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/age.js"></script>
+<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+<script type="text/javascript" src="js/courseinter.js"></script>
+</body>
+</html>
